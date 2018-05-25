@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Document</title>
+	<link rel="stylesheet" href="libs/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.css">
+	<link rel="stylesheet" href="libs/bootstrap-4.1.1-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="main.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+	<div class="container d-flex h-100">
+		<main class="d-flex h-100" >
+
+			<div class="row align-self-center w-100">
+
+				<div class="col-7 mx-auto">
+					<div class="logo">
+						<a href="#"><img src="images/logo_03.png" alt=""></a>
+					</div>
+
+					<div class="main-content">
+						<h1>
+							<span class="label">Lorem ipsum</span>
+							<span class="secondary-label">Lorem</span>
+						</h1>
+					</div>
+
+					<div class="sub-head">
+						<p>Заполняй заявку и принимай участие в розыгрыше<br>
+							<strong>гарантированных</strong> скидок до -50% на выбранное<br> направление. </p>
+						</div>
+					</div>
+
+					<div class="col-5 ">
+						<div class="card card-body">
+							<form id="contact-form" class="form" action="#" method="POST" role="form">
+								<div class="form-group">
+									<!-- <label class="form-label" for="name">Имя</label> -->
+									<input type="text" class="form-control" id="name" name="name" placeholder="Имя" tabindex="1" required>
+								</div>  
+								<div class="form-group">
+									<!-- <label class="form-label" for="email">Your Email</label> -->
+									<input type="email" class="form-control" id="email" name="email" placeholder="Email" tabindex="2" required>
+								</div>  
+								<div class="form-group" >
+									<!-- <label class="form-label" for="phone">Phone number</label>  -->
+									<input type="phone" class="form-control" id="phone" name="phone" placeholder="Телефон" tabindex="2" required>
+								</div>
+								<div class="form-group">
+									<!-- <label class="form-label" for="country">Select country</label> -->
+									<div class="selectDropdown">
+										<select id="selectbasic" name="selectbasic" class="form-control " >
+											<option value="" disabled selected>Какое направление Вас интересует?</option>
+											<option value="2">Java programming</option>
+											<option value="3">QA</option>
+											<option value="4">C++ programming</option>
+											<option value="5">PHP programming</option>
+											<option value="6">C# programming</option>
+											<option value="7">UI/UX design</option>
+											<option value="8">Курсы для детей</option>
+											<option value="9">Project managment</option>
+											<option value="10">Frontend development</option>
+											<option value="11">IOS development</option>
+											<option value="12">DEVOPS</option>
+											<option value="13">IT recruiting</option>
+											<option value="14">Business Analisys</option>
+											<option value="15">AGILE/SCRUM</option>
+										</select>
+										<i class="fas fa-angle-down"></i>
+									</div>
+								</div>      
+								<div class="text-center">
+									<button type="submit" class="btn btn-start-order">участвовать</button>
+									<button type="submit" class="btn btn-more dashed">
+										Узнать больше о курсах<hr class="border01">
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="libs/bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
+
+		<script>
+			$("select").on({    
+				"change": function() {
+					$(this).blur();
+				},
+				'focus': function() {
+					$('.fa-angle-down').toggleClass('rotateCaret');
+				},
+
+				"blur": function() {
+					$('.fa-angle-down').removeClass('rotateCaret');
+        }/*,
+
+       "keyup": function(e) {
+            if (e.keyCode == 27)
+                console.log("displayed");
+            }*/
+          });
+        </script>
+      </body>
+      </html>

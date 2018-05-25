@@ -1,0 +1,251 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+
+	font-family: 'HelveticaNeueCyr';
+
+	src: url('libs/fonts/HelveticaNeueCyr-Medium.eot');
+
+	src: url('libs/fonts/HelveticaNeueCyr-Medium.eot?iefix') format('eot'),
+
+	url('libs/fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
+
+	url('libs/fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
+
+	font-weight: normal;
+
+	font-style: normal;
+
+}
+@font-face{
+
+	font-family: 'HelveticaNeueCyrBold';
+
+	src: url('libs/fonts/HelveticaNeueCyr-Bold.eot');
+
+	src: url('libs/fonts/HelveticaNeueCyr-Bold.eot?iefix') format('eot'),
+
+	url('libs/fonts/HelveticaNeueCyr-Bold.woff') format('woff'),
+
+	url('libs/fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
+
+	font-weight: bold;
+
+	font-style: normal;
+
+}
+@font-face{
+
+	font-family: 'HelveticaNeueCyrBlack';
+
+	src: url('libs/fonts/HelveticaNeueCyr-Black.eot');
+
+	src: url('libs/fonts/HelveticaNeueCyr-Black.eot?iefix') format('eot'),
+
+	url('libs/fonts/HelveticaNeueCyr-Black.woff') format('woff'),
+
+	url('libs/fonts/HelveticaNeueCyr-Black.ttf') format('truetype');
+
+	font-weight: normal;
+
+	font-style: normal;
+
+}
+@font-face{
+
+	font-family: 'HelveticaNeueCyrRoman';
+
+	src: url('libs/fonts/HelveticaNeueCyr-Roman.eot');
+
+	src: url('libs/fonts/HelveticaNeueCyr-Roman.eot?iefix') format('eot'),
+
+	url('libs/fonts/HelveticaNeueCyr-Roman.woff') format('woff'),
+
+	url('libs/fonts/HelveticaNeueCyr-Roman.ttf') format('truetype');
+
+	font-weight: normal;
+
+	font-style: normal;
+
+}
+
+body {
+	background: url(images/bg.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+html, body,.container{
+	height: 100%;
+}
+
+.logo {
+	padding-bottom: 60px;
+}
+
+.main-content{
+	margin-bottom: 45px;
+}
+
+.main-content h1{
+	display: inline;
+	font-size: 53.559px;
+	font-family: "HelveticaNeueCyrBold";
+	color: rgb( 255, 255, 255 );
+	text-transform: uppercase;
+	line-height: 1;
+	text-align: left;
+	z-index: 78;
+}
+
+h1 span {
+	background: #ec6413;
+	display: table;
+	padding-left: 28px;
+	padding-right: 32px;
+}
+
+.label{
+	padding-top: 20px;
+	padding-bottom: 31px;
+}
+
+.secondary-label{
+	padding-bottom: 30px;
+}
+
+.sub-head{
+	font-size: 18px;
+	font-family: "HelveticaNeueCyrRoman";
+	color: rgb( 254, 254, 254 );
+	line-height: 1.597;
+	text-align: left;
+	z-index: 70;
+}
+
+.sub-head strong {
+	font-family: "HelveticaNeueCyrBold";
+}
+
+/*contact-form*/
+.card-body {
+	background-color: rgb( 255, 255, 255 );
+	box-shadow: 1.5px 5px 20px -2px rgb( 21, 21, 24 );
+	min-width: 460px;
+	padding: 76px 68px;
+	z-index: 4;
+}
+
+.form-label {
+
+}
+
+.form-control {
+	font-size: 16px;
+	font-family: "HelveticaNeueCyrRoman";
+	color: rgb( 0, 0, 0 );
+	border-radius: 0;
+	border-width: 0 0 2px 0;
+	border-style: none none solid none;
+	padding-left: unset;
+}
+
+select option {
+	font-size: 15px;
+	color: rgb( 0, 0, 0 );
+	z-index: 31;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: transparent;
+}
+
+.selectDropdown {
+	position: relative;
+}
+
+.selectDropdown i {
+	position: absolute;
+	right: 0px;
+	top: 10px;
+}
+
+.selectDropdown .rotateCaret {
+	animation-fill-mode: forwards;
+	-ms-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+	transition: 0.5s;
+}
+
+option:checked {
+	color: #0041e5;
+}
+
+.form-control:focus {
+	box-shadow: none;
+	border-color: #5e9bfc;
+}
+
+button{
+
+}
+
+.btn-start-order {
+	font-size: 14px;
+	font-family: "HelveticaNeueCyrBold";
+	color: rgb( 255, 255, 255 );
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: unset;
+	width: 100%;
+	background: #26b215;
+	color: #fff;
+	margin: 30px 0;
+	padding: 10px 50px;
+	transition: all 0.25s ease 0s;
+	z-index: 51;
+}
+
+.btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus {
+	background: #2fa720;
+	transition: 0.5s;
+	z-index: 55;
+}
+
+.btn-more {
+	font-size: 16px;
+	font-family: "HelveticaNeueCyr";
+	color: rgb( 188, 188, 188 );
+	text-align: center;
+	background-color: unset;
+	z-index: 61;
+}
+
+.btn-more:hover {
+	color: #919191;
+	transition: 0.5s;
+}
+
+.border01 {
+	height: 1px;
+	background-image: linear-gradient(90deg, #d7d7d7, #d7d7d7 75%, transparent 75%, transparent 100%);
+	background-size: 21px 1px;
+	border: none;
+	margin: 0;
+}
+
+.btn-more:hover .border01 {
+	background-image: linear-gradient(90deg, #919191, #919191 75%, transparent 75%, transparent 100%);
+	transition: 0.5s;
+}
+
+@media (min-width: 1200px){
+	.container {
+		max-width: 1170px;
+	}
+}
